@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nosifer&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cheesecake para todos</title>
+</head>
+<body>
+    
+    <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+<!-- Link pular para conteúdo: Deve ter o comportamento de âncora, ao clicar ou pressionar enter, deve transportar a interação para o conteúdo principal (<main>) -->
+
+<!-- <nav role="region" aria-label="barra de acessibilidade" id="a11y-bar">
+  <ul class="a11y-menu">
+    <li> <a href="#" alt=""> Pular para menu [1] </a> </li>
+    <li> <a href="#" alt=""> Pular para conteúdo [2] </a> </li>
+    <li class="a11y-menu-right"> <a href="#" alt="Acessibilidade" class="a11y-icon"> Acessibilidade </a> </li>
+    <li> <a href="#" alt="Mapa do site"> Mapa do site </a> </li>
+  </ul>
+</nav> -->
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html" aria-label="Logotipo: Ai que fome!">
+        Ai que fome!
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+              <li class="dropdown-item dropend">
+                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                  Sobre (Somente visual)
+                </a>
+              </li>
+              <li class="dropdown-item dropend">
+                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                  Fale conosco (Somente visual)
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="#cadastro"> Receba a receita em casa. </a>
+
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<main id="main" name="main">
+
+  <secion class="hero ">
+    <div class="container px-4 py-5 d-flex">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1459663561442-984db4f334e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-1 fw-bold lh-1 mb-3 h1">Cheesecake Para todos!</h1>
+          <p class="lead">Cheesecake é uma sobremesa doce composta por uma ou mais camadas. A camada principal e mais espessa consiste em uma mistura de queijo fresco e macio (geralmente queijo cottage, cream cheese ou ricota ), ovos e açúcar. Se houver uma camada inferior, geralmente consiste em uma crosta ou base feita de biscoitos triturados (ou biscoitos digestivos), biscoitos, massa folhada ou, às vezes, pão de ló. Cheesecake pode serassado ou não assado (e geralmente é refrigerado).</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Me ensina a fazer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </secion>
+
+  <section class="container px-4 py-5" id="cadastro" name="cadastro">
+    <h2 class="pb-2 border-bottom font-lemon">Receba a receita em casa.</h2>
+    <form class="row g-3 needs-validation">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" required>
+
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4" aria-describedby="passwordHelpBlock" required>
+        <div id="passwordHelpBlock" class="form-text">
+          Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emoji.
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Endereço (Opcional)</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Rua das orquídeas, 120">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">complemento 2 (Opcional)</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estúdio, sala">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade (Opcional)</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Estado</label>
+
+        <select class="form-select" name="estados-brasil" aria-label="Selecione um estado" required>
+          <option selected>Selecione um estado</option>
+          <option value="Acre">Acre</option>
+          <option value="Alagoas">Alagoas</option>
+          <option value="Amapá">Amapá</option>
+          <option value="Amazonas">Amazonas</option>
+          <option value="Bahia">Bahia</option>
+          <option value="Ceará">Ceará</option>
+          <option value="Distrito Federal">Distrito Federal</option>
+          <option value="Espírito Santo">Espírito Santo</option>
+          <option value="Goiás">Goiás</option>
+          <option value="Maranhão">Maranhão</option>
+          <option value="Mato Grosso">Mato Grosso</option>
+          <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+          <option value="Minas Gerais">Minas Gerais</option>
+          <option value="Pará">Pará</option>
+          <option value="Paraíba">Paraíba</option>
+          <option value="Paraná">Paraná</option>
+          <option value="Pernambuco">Pernambuco</option>
+          <option value="Piauí">Piauí</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+          <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+          <option value="Rondônia">Rondônia</option>
+          <option value="Roraima">Roraima</option>
+          <option value="Santa Catarina">Santa Catarina</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Sergipe">Sergipe</option>
+          <option value="Tocantins">Tocantins</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="inputZip" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Aceito receber notícias sobre cheescake (Opcional).
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary submit" aria-label="Enviar formulário para receber receita de cheesecake na minha casa.">Enviar formulário</button>
+      </div>
+    </form>
+
+    <div class="feedbackalert">
+      <div class="alert alert-success" role="alert">
+        Formulário de pedido enviado com sucesso! Confira sua caixa de email.
+      </div>
+      </di>
+
+  </section>
+
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title h1" id="exampleModalLabel">Receita de Cheesecake tradicional</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar receita"></button>
+      </div>
+      <img class="img-fluid" src="https://img.itdg.com.br/tdg/images/recipes/000/114/164/348391/348391_original.jpg?mode=crop&width=710&height=200" alt="contém uma fatia de cheesecake decorado com folhas de hortelã, morango e mertilho, ao fundo desfocado exibe uma bandeja contendo outras fatias de bolo" />
+      <div class="modal-body m-4">
+        <h2 class="h2" id="ingredientes">INGREDIENTES</h2>
+        <ul class="list" aria-label="INGREDIENTES">
+          <li class="list-item line"> 1 pacote de biscoito tipo maisena.</li>
+          <li class="list-item line"> 1/2 xícara (chá) de margarina líquida.</li>
+          <li class="list-item line"> Canela em pó a gosto.</li>
+        </ul>
+        <h3 class="h3 mt-4" id="recheio">RECHEIO:</h3>
+        <ul class="list" aria-label="Recheio">
+          <li class="list-item line"> 4 potes de cream cheese (200 ou 220 g cada) </li>
+          <li class="list-item line"> 4 ovos (sempre um ovo para cada pote de creme) </li>
+          <li class="list-item line"> Suco de 1 limão grande </li>
+          <li class="list-item line"> Essência de baunilha a gosto </li>
+          <li class="list-item line"> Açúcar a gosto </li>
+        </ul>
+        <h3 class="h3 mt-4">COBERTURAS OPCIONAIS:</h3>
+        <ul class="list" aria-label="Coberturas opcionais">
+          <li class="list-item line"> Geleia light de framboesa, amora ou morangos</li>
+          <li class="list-item line"> Calda de chocolate</li>
+          <li class="list-item line"> Raspas de limão</li>
+        </ul>
+
+        <div class="info-box">
+          <h2 class="h3 ">MODO DE PREPARO</h2>
+          <ol class="list-order" aria-label="Modo de preparo">
+            <li class="list-item"> Bater o biscoito no liquidificador até obter uma farinha.</li>
+            <li class="list-item"> Transferir para uma tigela e acrescentar a margarina e a canela. Amassar bem com as mãos até obter uma farofa (massa quebradiça).</li>
+            <li class="list-item"> Untar levemente uma assadeira desmontável de aproximadamente 25 cm de diâmetro, com pinceladas de margarina.</li>
+            <li class="list-item"> Compacte a massa com as mãos forrando o fundo da assadeira e subindo 1 cm nas laterais.</li>
+            <li class="list-item"> Leve a massa para assar em forno pré-aquecido a 180ºC por 10 minutos. Retire imediatamente e deixe esfriar enquanto prepara o recheio.</li>
+            <li class="list-item"> Bata o cream cheese por 2 minutos na batedeira. Acrescente os outros ingredientes e bata até obter um creme homogêneo. De vez em quando interrompa e raspe o fundo com uma espátula. Despeje sobre a massa pré-assada e asse por 20 minutos em forno pré-aquecido a 180ºC. Retire do forno, deixe esfriar e leve para gelar. Espalhe a cobertura de sua preferência. Se for a calda de chocolate, empregue fria. Desenforme sobre um prato de bolo na hora de servir.</li>
+          </ol>
+
+          <h2 class="h3">INFORMAÇÕES ADICIONAIS</h2>
+          <p>Dicas: Utilize sempre a margarina líquida, pois no caso da margarina normal, derretida, a textura d0a massa se modifica após gelar e o resultado não é tão bom. Nunca utilize cream cheese light, pois não o recheio não atinge a textura desejada para corte. Respeite os tempos de forno para que a massa não escureça ou queime. Caso deseje acrescentar uvas passas ao creme, passe-as por farinha de trigo antes. Retire o excesso e utilize no creme, antes de levar para assar. Isso impede que se concentrem no fundo do recheio. Não adoce demais o creme e a sugestão de utilizar geleia light é porque é menos doce.</p>
+        </div>
+
+        <a href="https://www.tudogostoso.com.br/receita/114164-cheesecake-tradicional.html" target="_blank">Fonte: Tudo gostoso (Abre em outra página)</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar receita</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="main.js"></script>
+
+
+<script>
+  var ht = new HT({
+    token: "17d60c1324a436cda2f38aa558490789"
+  });
+</script>
+</body>
+</html>

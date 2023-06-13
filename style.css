@@ -1,0 +1,164 @@
+#a11y-bar {
+    display: flex;
+    .a11y-menu {
+      display: flex;
+      list-style: none;
+      width: 100%;
+      margin: 0 20px;
+      padding: 0;
+      li {
+        padding-right: 15px;
+        display: flex;
+        a {
+          display: flex;
+          align-items: center;
+        }
+        .a11y-icon {
+          &:before {
+            content: "";
+            background: url(https://cdn.icon-icons.com/icons2/2440/PNG/512/accessibility_icon_148550.png);
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+            // border: 1px solid red;
+            display: flex;
+            margin-right: 5px;
+          }
+        }
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+    .a11y-menu-right {
+      margin-left: auto;
+    }
+  }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .modal-backdrop {
+    background-color: #ed5f5b;
+  }
+  
+  .modal-backdrop.show {
+    opacity: 0.8;
+  }
+  
+  .modal .h1,
+  .modal .h2,
+  .modal .h2,
+  .modal .h3,
+  .modal .h4,
+  .modal .h5,
+  .modal .h6 {
+    color: #a52458;
+  }
+  
+  .h1,
+  .h2,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #a52458;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .display-1 {
+    font-family: "Lemon", cursive;
+  }
+  
+  .font-lemon {
+    font-family: "Lemon", cursive;
+  }
+  
+  .skip-link {
+    background: #1c3ed3;
+    color: #fff;
+    z-index: 999;
+    /* height: 75px; */
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    margin-left: -112px;
+  }
+  .skip-link:hover {
+    color: #fff;
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+  
+  .navbar-brand {
+    font-weight: 800;
+    font-family: "Raleway", cursive;
+  }
+  
+  .hero {
+    background-image: url(https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Birthday_cake_2wxy.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-xl {
+      max-width: 900px;
+    }
+  }
+  
+  .modal .h1 {
+    font-family: "Lemon", cursive;
+    font-size: 2rem;
+  }
+  .modal .h2 {
+    font-family: "Lemon", cursive;
+    font-size: 1.2rem;
+  }
+  .modal .h3 {
+    font-family: "Lemon", cursive;
+    font-size: 1rem;
+  }
+  .modal .h4 {
+  }
+  .modal .h5 {
+  }
+  .modal .h6 {
+  }
+  .modal .info-box {
+    padding: 20px;
+    border: 1px dashed #df535b;
+    background: #bb598121;
+    margin-bottom: 20px;
+  }
+  
+  .modal .list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .modal .list-order li {
+    margin-bottom: 8px;
+  }
+  .modal .list-order li::marker {
+  }
+  
+  .line {
+    border-bottom: 1px dashed #a524582e;
+  }
+  
+  .feedbackalert {
+    display: none;
+  }
+  
